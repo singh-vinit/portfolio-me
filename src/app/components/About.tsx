@@ -1,6 +1,6 @@
 export function About() {
   return (
-    <div className="border border-white text-white font-medium text-lg text-justify flex justify-between p-10">
+    <div className="text-white font-medium text-lg text-justify flex justify-between p-10">
       <p className="text-2xl font-bold">About me</p>
       <p className="w-[450px]">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore

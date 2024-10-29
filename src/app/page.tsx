@@ -1,21 +1,17 @@
 import { Name } from "@/app/components/Name";
 import { Profile } from "@/app/components/Profile";
-import { About } from "./components/About";
-import { TypescriptIcon } from "./svg/Typescript";
-import { JavascriptIcon } from "./svg/javascript";
-import { ReactIcon } from "./svg/react";
+import { About } from "@/app/components/About";
+import { Skill } from "@/app/components/Skill";
 
 export default function Home() {
   return (
     <>
-      <main className="h-[400px] flex justify-around items-center border border-red-500">
+      <main className="h-[400px] flex justify-around items-center">
         <Name />
         <Profile />
       </main>
       <About />
-      <TypescriptIcon />
-      <JavascriptIcon />
-      <ReactIcon />
+      <Skill />
     </>
   );
 }
