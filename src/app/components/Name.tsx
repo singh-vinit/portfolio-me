@@ -1,4 +1,5 @@
 import { AnimatedText } from "./AnimatedText";
+import { Social } from "./Social";
 export function Name() {
   return (
     <div className="flex flex-col">
@@ -12,7 +13,10 @@ export function Name() {
         text="I'm Vinit Singh"
         className="text-6xl font-bold bg-gradient-to-b from-white from-20% to-slate-500 to-80% bg-clip-text text-transparent"
       />
-      <p className="text-3xl font-bold bg-gradient-to-b from-white from-20% to-slate-500 to-80% bg-clip-text text-transparent">full stack engineer</p>
+      <p className="text-3xl font-bold bg-gradient-to-b from-white from-20% to-slate-500 to-80% bg-clip-text text-transparent">
+        full stack engineer
+      </p>
+      <Social />
     </div>
   );
 }

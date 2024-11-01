@@ -6,14 +6,17 @@ import { MyWork } from "./components/MyWork";
 
 export default function Home() {
   return (
-    <>
-      <main className="h-[300px] flex justify-around items-center">
+    <div className="flex flex-col gap-y-8">
+      <div className="flex justify-evenly items-center">
         <Name />
         <Profile />
-      </main>
-      <About />
-      <Skill />
-      <MyWork />
-    </>
+      </div>
+      <div>
+        <Skill />
+      </div>
+      <div>
+        <MyWork />
+      </div>
+    </div>
   );
 }
