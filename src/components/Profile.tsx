@@ -13,7 +13,7 @@ export function Profile() {
       <Image
         src={myImage}
         alt="image"
-        className="rounded-xl w-[350px] h-[350px]"
+        className="rounded-3xl w-[300px] h-[300px]"
       />
     </motion.div>
   );

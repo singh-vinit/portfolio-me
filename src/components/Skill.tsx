@@ -1,14 +1,14 @@
 import { SkillCard } from "./SkillCard";
-import { TypescriptIcon } from "../svg/typescript";
-import { JavascriptIcon } from "../svg/javascript";
-import { ExpressIcon } from "../svg/express";
-import { NextIcon } from "../svg/next";
-import { ReactIcon } from "../svg/react";
-import { GoIcon } from "../svg/go";
-import { PythonIcon } from "../svg/python";
-import { MongoIcon } from "../svg/mongo";
-import { PostgresIcon } from "../svg/postgress";
-import { RedisIcon } from "../svg/redis";
+import { TypescriptIcon } from "../app/svg/typescript";
+import { JavascriptIcon } from "../app/svg/javascript";
+import { ExpressIcon } from "../app/svg/express";
+import { NextIcon } from "../app/svg/next";
+import { ReactIcon } from "../app/svg/react";
+import { GoIcon } from "../app/svg/go";
+import { PythonIcon } from "../app/svg/python";
+import { MongoIcon } from "../app/svg/mongo";
+import { PostgresIcon } from "../app/svg/postgress";
+import { RedisIcon } from "../app/svg/redis";
 
 const database = [
   { name: "postgress", icon: <PostgresIcon /> },
