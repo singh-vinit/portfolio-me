@@ -1,63 +1,57 @@
-import { SkillCard } from "./SkillCard";
-import { TypescriptIcon } from "../app/svg/typescript";
-import { JavascriptIcon } from "../app/svg/javascript";
-import { ExpressIcon } from "../app/svg/express";
-import { NextIcon } from "../app/svg/next";
-import { ReactIcon } from "../app/svg/react";
-import { GoIcon } from "../app/svg/go";
-import { PythonIcon } from "../app/svg/python";
-import { MongoIcon } from "../app/svg/mongo";
-import { PostgresIcon } from "../app/svg/postgress";
-import { RedisIcon } from "../app/svg/redis";
+import Image from "next/image";
+import Tailwind from "@/app/assets/tailwindcss--sticker.webp";
+import Hono from "@/app/assets/hono--sticker.webp";
+import React from "@/app/assets/react--sticker.webp";
+import ReactQuery from "@/app/assets/reactquery--sticker.webp";
+import ReactRouter from "@/app/assets/reactrouter--sticker.webp";
+import T3 from "@/app/assets/t3-light.svg";
+import Express from "@/app/assets/expressjs_dark.svg";
+import Next from "@/app/assets/nextjs_icon_dark.svg";
+import Node from "@/app/assets/nodejs--sticker.webp";
+import TypeScript from "@/app/assets/typescript--sticker.webp";
+import Redux from "@/app/assets/redux--sticker.webp";
+import Javascript from "@/app/assets/javascript--sticker.webp";
+import Zod from "@/app/assets/zod--sticker.webp";
+import Redis from "@/app/assets/redis--sticker.webp";
+import Postgres from "@/app/assets/postgresql.svg";
+import Cplus from "@/app/assets/c++--sticker.webp";
+import C from "@/app/assets/c--sticker.webp";
 
-const database = [
-  { name: "postgress", icon: <PostgresIcon /> },
-  { name: "mongodb", icon: <MongoIcon /> },
-  { name: "redis", icon: <RedisIcon /> },
-];
-
-const language = [
-  { name: "javascript", icon: <JavascriptIcon /> },
-  { name: "typescript", icon: <TypescriptIcon /> },
-  { name: "go", icon: <GoIcon /> },
-  { name: "python", icon: <PythonIcon /> },
-];
-
-const framework = [
-  { name: "react", icon: <ReactIcon /> },
-  { name: "next js", icon: <NextIcon /> },
-  { name: "express", icon: <ExpressIcon /> },
+const icons = [
+  Hono,
+  React,
+  Tailwind,
+  ReactQuery,
+  ReactRouter,
+  T3,
+  Express,
+  Next,
+  Node,
+  TypeScript,
+  Redux,
+  Javascript,
+  Zod,
+  Redis,
+  Postgres,
+  Cplus,
+  C,
 ];
 
 export const Skill = () => {
   return (
-    <div className="flex flex-col gap-y-6 p-4">
-      <p className="text-white text-4xl font-bold">Code:Skills</p>
-
-      <div className="flex gap-x-10">
-        {language.map((obj) => (
-          <SkillCard>
-            <span className="capitalize font-medium text-lg">{obj.name}</span>
-            {obj.icon}
-          </SkillCard>
-        ))}
-      </div>
-
-      <div className="flex gap-x-10">
-        {framework.map((obj) => (
-          <SkillCard>
-            <span className="capitalize font-medium text-lg">{obj.name}</span>
-            {obj.icon}
-          </SkillCard>
-        ))}
-      </div>
-
-      <div className="flex gap-x-10">
-        {database.map((obj) => (
-          <SkillCard>
-            <span className="capitalize font-medium text-lg">{obj.name}</span>
-            {obj.icon}
-          </SkillCard>
+    <div>
+      <p className="text-white text-4xl font-bold mb-8">Code:Skills</p>
+      <div className="grid grid-cols-6 place-items-center gap-y-2">
+        {icons.map((Icon, i) => (
+          <div key={i} className="p-2">
+            <Image
+              src={Icon}
+              alt="icon"
+              width={50}
+              height={50}
+              className="animate-pulse"
+            />
+          </div>
         ))}
       </div>
     </div>

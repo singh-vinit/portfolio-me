@@ -122,7 +122,7 @@ export function Footer() {
             <TooltipTrigger>
               {icon.icon}
             </TooltipTrigger>
-            <TooltipContent>
+            <TooltipContent className="bg-white text-black font-bold">
               <p>{icon.text}</p>
             </TooltipContent>
           </Tooltip>

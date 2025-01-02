@@ -9,9 +9,9 @@ import ScrollProgress from "@/components/ui/scroll-progress";
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col gap-y-8">
+      <div className="w-[80%] mx-auto flex flex-col space-y-8">
         <ScrollProgress className="top-[0px]" />
-        <div className="flex justify-evenly items-center">
+        <div className="flex justify-around items-center">
           <Name />
           <Profile />
         </div>
