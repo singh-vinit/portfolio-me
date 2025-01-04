@@ -28,11 +28,11 @@ export default function ProjectCard({ title, image, tech }: Props) {
       transition={{ duration: 1, type: "spring" }}
       // viewport={{ once: true }}
     >
-      <Card className="bg-black text-white w-[450px]">
+      <Card className="bg-white/5 text-white">
         <CardHeader className="p-0">
           <CardDescription>
             <Image src={image} alt="image" className="rounded-t-xl" />
-            <CardTitle className="uppercase font-bold text-xl px-6 py-2 bg-gradient-to-b from-white from-20% to-slate-500 to-80% bg-clip-text text-transparent">
+            <CardTitle className="uppercase font-bold text-xl px-6 py-2 text-white">
               {title}
             </CardTitle>
           </CardDescription>
