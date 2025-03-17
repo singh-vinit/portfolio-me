@@ -17,10 +17,21 @@ interface Props {
   title: string;
   image: StaticImageData;
   tech: string[];
-  // description: string;
+  description: string;
+  githubLink: string;
+  liveLink: string;
 }
 
-export default function ProjectCard({ title, image, tech }: Props) {
+import Link from "next/link";
+
+export default function ProjectCard({
+  title,
+  image,
+  tech,
+  description,
+  githubLink,
+  liveLink,
+}: Props) {
   return (
     <motion.div
       initial={{ scale: 0.8 }}
@@ -28,7 +39,7 @@ export default function ProjectCard({ title, image, tech }: Props) {
       transition={{ duration: 1, type: "spring" }}
       // viewport={{ once: true }}
     >
-      <Card className="bg-white/5 text-white">
+      <Card className="shadow-[8px_8px_10px_rgba(255,255,255,0.2)] border-none bg-black md:w-[450px]">
         <CardHeader className="p-0">
           <CardDescription>
             <Image src={image} alt="image" className="rounded-t-xl" />
@@ -38,29 +49,34 @@ export default function ProjectCard({ title, image, tech }: Props) {
           </CardDescription>
         </CardHeader>
         <CardContent className="py-2">
-          {tech.map((t, i) => (
-            <Badge
-              key={i}
-              variant="secondary"
-              className="text-black mr-1 capitalize font-semibold"
-            >
-              {t}
-            </Badge>
-          ))}
+          <div>
+            {tech.map((t, i) => (
+              <Badge
+                key={i}
+                variant="secondary"
+                className="text-black mr-1 capitalize font-semibold"
+              >
+                {t}
+              </Badge>
+            ))}
+          </div>
+          <p className="text-white font-light text-lg">{description}</p>
         </CardContent>
         <CardFooter className="flex gap-4 py-3">
-          <a
-            href="#"
-            className="hover:scale-110 transition-transform ease-in-out"
+          <Link
+            href={githubLink}
+            className="flex gap-x-1 hover:scale-110 transition-transform ease-in-out"
           >
             <GithubIcon />
-          </a>
-          <a
-            href="#"
-            className="hover:scale-110 transition-transform ease-in-out"
+            <span className="text-white font-light text-sm">github</span>
+          </Link>
+          <Link
+            href={liveLink}
+            className="flex gap-x-1 hover:scale-110 transition-transform ease-in-out"
           >
             <VercelIcon />
-          </a>
+            <span className="text-white font-light text-sm">live</span>
+          </Link>
         </CardFooter>
       </Card>
     </motion.div>

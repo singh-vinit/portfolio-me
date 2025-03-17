@@ -11,16 +11,16 @@ export function Education() {
           <div className="flex items-center space-x-4">
             <Image src={msit} alt="MSIT" width={60} height={60} />
             <div>
-              <p className="text-white text-xl font-medium">
+              <p className="text-white text-lg md:text-xl font-medium">
                 Maharaja Surajmal Institute of Technology
               </p>
-              <p className="text-white/45 text-lg font-light">
+              <p className="text-white/45 text-sm md:text-lg font-light">
                 B.Tech in Information Technology
               </p>
             </div>
           </div>
         </Link>
-        <p className="text-white/45 text-lg font-light">2022-2026</p>
+        <p className="text-white/45 text-sm md:text-lg font-light">2022-2026</p>
       </div>
     </div>
   );
