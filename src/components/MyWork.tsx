@@ -12,7 +12,7 @@ export const MyWork = () => {
             MyWork : Projects
           </p>
           <p className="text-white/50 text-lg text-justify">
-            I've worked on a variety of projects, from simple websites to
+            I&apos;ve worked on a variety of projects, from simple websites to
             complex web applications.
           </p>
         </div>
