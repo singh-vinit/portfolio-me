@@ -49,10 +49,16 @@ export default function ProjectCard({ title, image, tech }: Props) {
           ))}
         </CardContent>
         <CardFooter className="flex gap-4 py-3">
-          <a href="#" className="hover:scale-110 transition-transform ease-in-out">
+          <a
+            href="#"
+            className="hover:scale-110 transition-transform ease-in-out"
+          >
             <GithubIcon />
           </a>
-          <a href="#" className="hover:scale-110 transition-transform ease-in-out">
+          <a
+            href="#"
+            className="hover:scale-110 transition-transform ease-in-out"
+          >
             <VercelIcon />
           </a>
         </CardFooter>

@@ -4,6 +4,7 @@ import { Skill } from "@/components/Skill";
 import { Name } from "../components/Name";
 import { MyWork } from "../components/MyWork";
 import { Footer } from "@/components/Footer";
+import { Education } from "@/components/Education";
 import ScrollProgress from "@/components/ui/scroll-progress";
 
 export default function Home() {
@@ -11,20 +12,15 @@ export default function Home() {
     <>
       <div className="w-[80%] mx-auto flex flex-col space-y-16">
         <ScrollProgress className="top-[0px]" />
-        <div className="flex flex-col md:flex-row md:justify-around md:items-center">
+        <div className="flex flex-col w-[100%] md:flex-row md:justify-between md:items-center md:w-[70%] md:mx-auto">
           <Name />
           <Profile />
         </div>
-        <div>
-          <About />
-        </div>
-        <div>
-          <Skill />
-        </div>
-        <div>
-          <MyWork />
-        </div>
-        <div className="bg-white h-[2px] mt-4"></div>
+        <About />
+        <Education />
+        <Skill />
+        <MyWork />
+        <div className="bg-white h-[1px] mt-4"></div>
         <div>
           <Footer />
         </div>

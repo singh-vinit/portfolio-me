@@ -39,18 +39,12 @@ const icons = [
 
 export const Skill = () => {
   return (
-    <div>
+    <div className="w-[100%] md:w-[70%] md:mx-auto">
       <p className="text-white text-4xl font-bold mb-8">Code:Skills</p>
       <div className="grid grid-cols-6 place-items-center gap-y-2">
         {icons.map((Icon, i) => (
           <div key={i} className="p-2">
-            <Image
-              src={Icon}
-              alt="icon"
-              width={50}
-              height={50}
-              className="animate-pulse"
-            />
+            <Image src={Icon} alt="icon" width={50} height={50} />
           </div>
         ))}
       </div>

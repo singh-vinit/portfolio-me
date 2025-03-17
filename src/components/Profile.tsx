@@ -14,7 +14,7 @@ export function Profile() {
       <Image
         src={myImage}
         alt="image"
-        className="rounded-3xl w-[50%] md:w-[300px] md:h-[300px] mx-auto md:mx-0"
+        className="rounded-3xl w-[50%] md:w-[250px] md:h-[250px] mx-auto md:mx-0 "
       />
     </motion.div>
   );
